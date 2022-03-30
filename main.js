@@ -87,10 +87,8 @@ btnRight.addEventListener('click', () => {
  // 
 
  const checkReady = () => {
-    if (document.readyState === 'complete') {
-        const loading = document.querySelector('.loading')
-        loading.style.display = 'none'
-    }
+    const loading = document.querySelector('.loading')
+    loading.style.display = 'none'    
  }
 
  setTimeout(checkReady, 2000)
